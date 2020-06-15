@@ -346,9 +346,7 @@ public class ErrataHandler extends BaseHandler {
         validKeys.add("bugs");
         validKeys.add("keywords");
         validKeys.add("severity");
-        if (errata.isPublished()) {
-            validKeys.add("cves");
-        }
+        validKeys.add("cves");
         validateMap(validKeys, details);
 
         validKeys.clear();
@@ -787,8 +785,7 @@ public class ErrataHandler extends BaseHandler {
         }
 
         //Update Errata Cache
-        if ((packagesAdded > 0) && errata.isPublished() &&
-                (errata.getChannels() != null)) {
+        if (packagesAdded > 0 && errata.getChannels() != null) {
             ErrataCacheManager.updateCacheForChannelsAsync(
                     errata.getChannels());
         }
@@ -837,8 +834,7 @@ public class ErrataHandler extends BaseHandler {
         }
 
         //Update Errata Cache
-        if ((packagesRemoved > 0) && errata.isPublished() &&
-                (errata.getChannels() != null)) {
+        if (packagesRemoved > 0 && errata.getChannels() != null) {
             ErrataCacheManager.updateCacheForChannelsAsync(
                     errata.getChannels());
         }
