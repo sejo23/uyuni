@@ -521,7 +521,7 @@ public class ErrataHandler extends BaseHandler {
                 errata.getAdvisoryRel().toString());
 
         //Save the errata
-        ErrataManager.storeErrata(errata);
+        ErrataFactory.save(errata);
 
         return 1;
     }
@@ -791,7 +791,7 @@ public class ErrataHandler extends BaseHandler {
         }
 
         //Save the errata
-        ErrataManager.storeErrata(errata);
+        ErrataFactory.save(errata);
 
         return packagesAdded;
     }
@@ -840,7 +840,7 @@ public class ErrataHandler extends BaseHandler {
         }
 
         //Save the errata
-        ErrataManager.storeErrata(errata);
+        ErrataFactory.save(errata);
 
         return packagesRemoved;
     }
