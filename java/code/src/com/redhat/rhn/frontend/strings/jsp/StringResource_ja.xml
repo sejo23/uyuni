@@ -4650,17 +4650,9 @@ organization. You may grant or remove the organization administrator role in the
         <source> &lt;p&gt; The following patch list represents patches owned by your organization.&lt;/p&gt; &lt;p&gt; Click on a patch's advisory to edit the patch details or the list of packages to which the patch applies. &lt;/p&gt;</source>
         <target> &lt;p&gt;次のエラータ一覧はお客様の企業/組織が所有するエラータになります。&lt;/p&gt; &lt;p&gt;エラータの詳細やそのエラータが適用されるパッケージの一覧を編集するには、エラータのアドバイザリをクリックします。&lt;/p&gt;</target>
       </trans-unit>
-      <trans-unit id="erratalist.jsp.unpublishederrata">
-        <source>Unpublished Patches</source>
-        <target>未発行のエラータ</target>
-      </trans-unit>
       <trans-unit id="erratalist.jsp.erratamgmt">
         <source>Patches Management</source>
         <target>エラータ管理</target>
-      </trans-unit>
-      <trans-unit id="erratalist.jsp.nounpublishederrata">
-        <source>No Unpublished Patches</source>
-        <target>未発行のエラータはありません</target>
       </trans-unit>
       <trans-unit id="erratalist.jsp.nopublishederrata">
         <source>No Published Patches</source>

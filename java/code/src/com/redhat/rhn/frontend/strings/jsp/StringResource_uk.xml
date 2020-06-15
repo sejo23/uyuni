@@ -4331,14 +4331,8 @@ organization. You may grant or remove the organization administrator role in the
       <trans-unit id="erratalist.jsp.ownederratapagesummary">
         <source> &lt;p&gt; The following patch list represents patches owned by your organization.&lt;/p&gt; &lt;p&gt; Click on a patch's advisory to edit the patch details or the list of packages to which the patch applies. &lt;/p&gt;</source>
       </trans-unit>
-      <trans-unit id="erratalist.jsp.unpublishederrata">
-        <source>Unpublished Patches</source>
-      </trans-unit>
       <trans-unit id="erratalist.jsp.erratamgmt">
         <source>Patches Management</source>
-      </trans-unit>
-      <trans-unit id="erratalist.jsp.nounpublishederrata">
-        <source>No Unpublished Patches</source>
       </trans-unit>
       <trans-unit id="erratalist.jsp.nopublishederrata">
         <source>No Published Patches</source>
