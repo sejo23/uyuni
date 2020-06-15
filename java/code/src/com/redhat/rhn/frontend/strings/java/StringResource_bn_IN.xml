@@ -1097,13 +1097,6 @@
           <context context-type="sourcefile">Navigation Menu</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="Unpublished">
-        <source>Unpublished</source>
-        <target>অপ্রকাশিত</target>
-        <context-group name="ctx">
-          <context context-type="sourcefile">Navigation Menu</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="Unentitled">
         <source>Without System Type</source>
         <target>এনটাইটেলমেন্টবিহীন</target>

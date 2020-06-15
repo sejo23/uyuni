@@ -1124,13 +1124,6 @@
         </context-group>
         <target>Notas de lanzamiento de Unix</target>
       </trans-unit>
-      <trans-unit id="Unpublished">
-        <source>Unpublished</source>
-        <context-group name="ctx">
-          <context context-type="sourcefile">Navigation Menu</context>
-        </context-group>
-        <target>Sin publicar</target>
-      </trans-unit>
       <trans-unit id="Unentitled">
         <source>Without System Type</source>
         <context-group name="ctx">
@@ -2838,7 +2831,6 @@ and try again.
       <trans-unit id="toolbar.create.erratum">
         <source>Create Patch</source>
         <context-group name="ctx">
-          <context context-type="sourcefile">/rhn/errata/UnpublishedErrata</context>
           <context context-type="sourcefile">/rhn/errata/PublishedErrata</context>
         </context-group>
         <target>Crear errata</target>
