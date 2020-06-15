@@ -978,12 +978,7 @@ public class ErrataFactory extends HibernateFactory {
         cloned.setLastModified(original.getLastModified());
         cloned.setSeverity(original.getSeverity());
 
-
-        /*
-         * Copy the packages
-         * packages aren't published or unpublished exactly... that is determined
-         * by the status of the errata...
-         */
+        // Copy the packages
         cloned.setPackages(new HashSet(original.getPackages()));
 
         /*
