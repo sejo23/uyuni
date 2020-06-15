@@ -962,21 +962,21 @@ public class ErrataFactory extends HibernateFactory {
         Errata original = cloned.getOriginal();
 
         //Set the easy things first ;)
-        ((Errata) cloned).setAdvisoryType(original.getAdvisoryType());
-        ((Errata) cloned).setProduct(original.getProduct());
-        ((Errata) cloned).setErrataFrom(original.getErrataFrom());
-        ((Errata) cloned).setDescription(original.getDescription());
-        ((Errata) cloned).setSynopsis(original.getSynopsis());
-        ((Errata) cloned).setTopic(original.getTopic());
-        ((Errata) cloned).setSolution(original.getSolution());
-        ((Errata) cloned).setIssueDate(original.getIssueDate());
-        ((Errata) cloned).setUpdateDate(original.getUpdateDate());
-        ((Errata) cloned).setNotes(original.getNotes());
-        ((Errata) cloned).setRefersTo(original.getRefersTo());
-        ((Errata) cloned).setAdvisoryRel(original.getAdvisoryRel());
-        ((Errata) cloned).setLocallyModified(original.getLocallyModified());
-        ((Errata) cloned).setLastModified(original.getLastModified());
-        ((Errata) cloned).setSeverity(original.getSeverity());
+        cloned.setAdvisoryType(original.getAdvisoryType());
+        cloned.setProduct(original.getProduct());
+        cloned.setErrataFrom(original.getErrataFrom());
+        cloned.setDescription(original.getDescription());
+        cloned.setSynopsis(original.getSynopsis());
+        cloned.setTopic(original.getTopic());
+        cloned.setSolution(original.getSolution());
+        cloned.setIssueDate(original.getIssueDate());
+        cloned.setUpdateDate(original.getUpdateDate());
+        cloned.setNotes(original.getNotes());
+        cloned.setRefersTo(original.getRefersTo());
+        cloned.setAdvisoryRel(original.getAdvisoryRel());
+        cloned.setLocallyModified(original.getLocallyModified());
+        cloned.setLastModified(original.getLastModified());
+        cloned.setSeverity(original.getSeverity());
 
 
         /*
@@ -984,7 +984,7 @@ public class ErrataFactory extends HibernateFactory {
          * packages aren't published or unpublished exactly... that is determined
          * by the status of the errata...
          */
-        ((Errata) cloned).setPackages(new HashSet(original.getPackages()));
+        cloned.setPackages(new HashSet(original.getPackages()));
 
         /*
          * Copy the keywords
@@ -994,7 +994,7 @@ public class ErrataFactory extends HibernateFactory {
         Iterator keysItr = IteratorUtils.getIterator(original.getKeywords());
         while (keysItr.hasNext()) {
             Keyword k = (Keyword) keysItr.next();
-            ((Errata) cloned).addKeyword(k.getKeyword());
+            cloned.addKeyword(k.getKeyword());
         }
 
 
@@ -1008,7 +1008,7 @@ public class ErrataFactory extends HibernateFactory {
             Bug cloneB = ErrataManager.createNewPublishedBug(bugIn.getId(),
                         bugIn.getSummary(),
                         bugIn.getUrl());
-            ((Errata) cloned).addBug(cloneB);
+            cloned.addBug(cloneB);
         }
     }
 
